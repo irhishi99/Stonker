@@ -1,0 +1,94 @@
+portfolio:
+  total_capital: 10000000.0  # Rs 1 Crore (1,00,00,000)
+  equity_sleeve: 0.97        # 97%
+  reserve_cash: 0.03         # 3%
+  snapshot_date: "2026-09-28"
+  universe_lock_date: "2026-09-25"
+  put_expiry_date: "2026-12-29"
+
+universe:
+  invested_tickers:
+    - symbol: "WELCORP"
+      name: "Welspun Corp Ltd"
+      sector: "Capital Goods & EPC"
+    - symbol: "RPEL"
+      name: "RRP Semiconductor / RPEL"
+      sector: "Capital Goods & EPC"
+    - symbol: "SBCL"
+      name: "Shivalik Bimetal Controls"
+      sector: "Capital Goods & EPC"
+    - symbol: "AEROFLEX"
+      name: "Aeroflex Industries Ltd"
+      sector: "Capital Goods & EPC"
+    - symbol: "TDPOWERSYS"
+      name: "TD Power Systems Ltd"
+      sector: "Capital Goods & EPC"
+    - symbol: "RAMRAT"
+      name: "Ram Ratna Wires Ltd"
+      sector: "Capital Goods & EPC"
+    - symbol: "APARINDS"
+      name: "Apar Industries Ltd"
+      sector: "Capital Goods & EPC"
+    - symbol: "ACMESOLAR"
+      name: "ACME Solar Holdings Ltd"
+      sector: "Power"
+
+  reserve_queue:
+    - symbol: "QPOWER"
+      sector: "Power"
+    - symbol: "FINCABLES"
+      sector: "Capital Goods & EPC"
+    - symbol: "GRINDWELL"
+      sector: "Capital Goods & EPC"
+    - symbol: "ACE"
+      sector: "Capital Goods & EPC"
+    - symbol: "CARBORUNIV"
+      sector: "Capital Goods & EPC"
+    - symbol: "GOODLUCK"
+      sector: "Capital Goods & EPC"
+    - symbol: "ENGINERSIN"
+      sector: "Capital Goods & EPC"
+
+  sectors:
+    - "Cement"
+    - "Capital Goods & EPC"
+    - "Power"
+
+risk_rules:
+  weight_min: 0.05        # 5%
+  weight_max: 0.15        # 15%
+  atr_period: 14
+  atr_multiple: 5.0
+  support_buffer_atr: 1.0
+  rs_window: 63           # sessions (~3 months)
+  di_gap_min: 2.0
+  min_median_turnover: 50000000.0  # Rs 5 Cr/day
+  profit_lock_trigger: 0.10        # +10%
+
+market_parameters:
+  india_erp: 0.0708       # 7.08%
+  nifty_lot_size: 65
+  gsec_10y_yield_default: 0.068  # 6.8%
+
+indices:
+  benchmark: "Nifty 500 TRI"
+  tracked_indices:
+    - "Nifty 500 TRI"
+    - "Nifty 50 Spot"
+    - "Nifty Smallcap 500"
+    - "Nifty500 Multicap Infrastructure 50:30:20"
+    - "Nifty500 Momentum 50"
+    - "Nifty Capital Goods"
+    - "Nifty India Manufacturing"
+    - "Nifty Energy"
+    - "Nifty Infrastructure"
+    - "Nifty Cement"
+    - "Nifty Metal"
+    - "Nifty Power"
+
+paths:
+  screener_export: "data/screener_export.csv"
+  raw_dir: "data/raw"
+  parquet_dir: "data/parquet"
+  output_dir: "output"
+  status_file: "data/status.json"
