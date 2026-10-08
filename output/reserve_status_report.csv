@@ -1,0 +1,8 @@
+Ticker,Sector,Would_Be_Bought_Today,Reason
+QPOWER,Power,NO,FAIL: DI gap -7.09 < +2.0 (Bearish / Weak trend).
+FINCABLES,Capital Goods & EPC,YES,"PASS: Eligible for immediate purchase (DI gap: +6.68, Turnover: Rs 157.68 Cr, YoY Profit: +15.2%)."
+GRINDWELL,Capital Goods & EPC,YES,"PASS: Eligible for immediate purchase (DI gap: +6.08, Turnover: Rs 439.42 Cr, YoY Profit: +18.4%)."
+ACE,Capital Goods & EPC,NO,FAIL: DI gap -8.48 < +2.0 (Bearish / Weak trend).
+CARBORUNIV,Capital Goods & EPC,YES,"PASS: Eligible for immediate purchase (DI gap: +6.54, Turnover: Rs 130.44 Cr, YoY Profit: +14.8%)."
+GOODLUCK,Capital Goods & EPC,NO,"FAIL: Hard fundamental screen failed (Market Cap Rs 3200.0 Cr < Rs 5,000 Cr threshold (HARD))."
+ENGINERSIN,Capital Goods & EPC,YES,"PASS: Eligible for immediate purchase (DI gap: +18.89, Turnover: Rs 30.26 Cr, YoY Profit: +22.1%)."

@@ -1,0 +1,3 @@
+Ticker,Sector,Market_Cap_Cr,ROCE_Pct,OPM_Pct,Debt_To_Equity,Interest_Coverage,OCF_Cr,YoY_Profit_Growth_Pct,Pledged_Pct,Median_Turnover_Cr,Hard_Pass,Soft_Pass,Overall_Pass,Exception_Count,Exceptions
+ACMESOLAR,Power,18400.0,14.8,82.5,1.45,2.8,1850.0,42.0,4.5,34.844022348,True,True,True,0,None (Passed All)
+QPOWER,Power,12800.0,16.2,34.0,0.85,4.1,1120.0,21.0,0.0,47.89569432,True,True,True,0,None (Passed All)

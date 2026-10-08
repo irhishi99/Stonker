@@ -1,0 +1,138 @@
+{
+  "timestamp_ist": "2026-10-08 20:04:33",
+  "total_duration_seconds": 0.55,
+  "overall_status": "OK",
+  "summary_line": "Last refresh completed 2026-10-08 20:04:33 IST: all 10 steps OK in 0 min 1 s.",
+  "steps": [
+    {
+      "step_number": 1,
+      "step_name": "Ingest Equity Bhavcopy",
+      "status": "OK",
+      "duration_seconds": 0.063,
+      "details": {
+        "status": "OK",
+        "rows": 4035,
+        "tickers_count": 15,
+        "source": "demo",
+        "is_demo": true,
+        "cache_file": "data/raw\\bhavcopy\\raw_equity_bhavcopy.csv"
+      }
+    },
+    {
+      "step_number": 2,
+      "step_name": "Corporate Adjustments & Parquet",
+      "status": "OK",
+      "duration_seconds": 0.039,
+      "details": {
+        "status": "OK",
+        "rows": 4035,
+        "parquet_file": "data/parquet\\equity_ohlcv.parquet",
+        "is_demo": true
+      }
+    },
+    {
+      "step_number": 3,
+      "step_name": "Index Histories",
+      "status": "OK",
+      "duration_seconds": 0.049,
+      "details": {
+        "status": "OK",
+        "rows": 3228,
+        "indices_count": 12,
+        "source": "demo",
+        "is_demo": true,
+        "parquet_file": "data/parquet\\indices_ohlcv.parquet"
+      }
+    },
+    {
+      "step_number": 4,
+      "step_name": "Fundamentals Database",
+      "status": "OK",
+      "duration_seconds": 0.004,
+      "details": {
+        "status": "OK",
+        "rows": 15,
+        "source": "demo_fixture",
+        "is_demo": true,
+        "parquet_file": "data/parquet\\fundamentals.parquet"
+      }
+    },
+    {
+      "step_number": 5,
+      "step_name": "Macro & Rates Ingestion",
+      "status": "OK",
+      "duration_seconds": 0.006,
+      "details": {
+        "status": "OK",
+        "rows": 269,
+        "source": "demo",
+        "is_demo": true,
+        "parquet_file": "data/parquet\\macro_rates.parquet"
+      }
+    },
+    {
+      "step_number": 6,
+      "step_name": "Options Bhavcopy Ingestion",
+      "status": "OK",
+      "duration_seconds": 0.036,
+      "details": {
+        "status": "OK",
+        "rows": 1345,
+        "source": "demo",
+        "is_demo": true,
+        "parquet_file": "data/parquet\\options_bhavcopy.parquet"
+      }
+    },
+    {
+      "step_number": 7,
+      "step_name": "Technical Signals (Stub)",
+      "status": "OK",
+      "duration_seconds": 0.18,
+      "details": {
+        "status": "OK",
+        "tickers_computed": 15,
+        "screen_exceptions": 5,
+        "parquet_file": "data/parquet\\technical_indicators.parquet",
+        "is_demo": true
+      }
+    },
+    {
+      "step_number": 8,
+      "step_name": "Risk & Hedging Analytics (Stub)",
+      "status": "OK",
+      "duration_seconds": 0.108,
+      "details": {
+        "status": "OK",
+        "invested_count": 8,
+        "total_still_at_risk": 1335277.25,
+        "parquet_file": "data/parquet\\portfolio_risk_stops.parquet",
+        "is_demo": true
+      }
+    },
+    {
+      "step_number": 9,
+      "step_name": "Portfolio Ledger & Attribution (Stub)",
+      "status": "OK",
+      "duration_seconds": 0.061,
+      "details": {
+        "status": "OK",
+        "total_nav": 10000000.0,
+        "xirr_ann_pct": 0.0,
+        "reserve_candidates_evaluated": 7,
+        "parquet_file": "data/parquet\\portfolio_summary.parquet",
+        "is_demo": true
+      }
+    },
+    {
+      "step_number": 10,
+      "step_name": "Pipeline Status Logger",
+      "status": "OK",
+      "duration_seconds": 0.0,
+      "details": {
+        "status": "OK",
+        "status_file": "data/status.json",
+        "summary_line": "Last refresh completed 2026-10-08 20:04:33 IST: all 10 steps OK in 0 min 1 s."
+      }
+    }
+  ]
+}
